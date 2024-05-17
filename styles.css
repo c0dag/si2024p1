@@ -18,7 +18,7 @@ body {
   background-color: #fff;
 }
 
-
+/*navbar*/
 .header {
   position: fixed;
   top: 0;
@@ -58,6 +58,7 @@ body {
 .navbar a:hover::before {
   width: 100%
 }
+/*Navbar fim*/
 
 .spacer {
   height: 70px;
@@ -73,9 +74,10 @@ body {
 }
 
 main {
-  padding: 20px;
+  
   margin-left: 12%;
   margin-right: 12%;
+  height: 150vh;
 }
 
 .info-section {
@@ -261,4 +263,17 @@ main {
   border-radius: 50%;
   width: 180px;
   height: 180px;
+}
+
+/*FOOTER*/
+footer{
+  width: 100%;
+  color: #f5f5f5;
+}
+
+#footer_content{
+  background-color: #32A69A;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3rem 3.5rem;
 }
