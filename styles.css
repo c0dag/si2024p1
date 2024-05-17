@@ -14,12 +14,12 @@
   color: #2a8105;
 }
 
-body{
+body {
   background-color: #fff;
 }
 
 
-.header{
+.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -35,7 +35,7 @@ body{
   background-color: #32A69A;
 }
 
-.navbar a{
+.navbar a {
   position: relative;
   font-size: 19px;
   color: white;
@@ -44,7 +44,7 @@ body{
   margin-left: 20px;
 }
 
-.navbar a::before{
+.navbar a::before {
   content: '';
   position: absolute;
   top: 100%;
@@ -55,7 +55,7 @@ body{
   transition: .3s;
 }
 
-.navbar a:hover::before{
+.navbar a:hover::before {
   width: 100%
 }
 
@@ -68,7 +68,8 @@ body{
   text-align: center;
   color: #8C0D2F5;
   font-weight: bold;
-  padding: 10px 20px;;
+  padding: 10px 20px;
+  ;
 }
 
 main {
@@ -132,41 +133,56 @@ main {
 
 /* Estilo para o contêiner do carrossel */
 .carousel-container {
-  position: relative; /* Define o posicionamento relativo */
+  position: relative;
+  /* Define o posicionamento relativo */
   flex: 1;
   max-width: 600px;
-  margin: 50px auto 0; /* Adicionei margem superior de 50px e removi a margem inferior */
+  margin: 50px auto 0;
+  /* Adicionei margem superior de 50px e removi a margem inferior */
 }
 
 /* Estilo para os botões do carrossel */
 /* Estilo para os botões do carrossel */
 .carousel-buttons {
-  position: absolute; /* Define o posicionamento absoluto */
-  top: 50%; /* Coloca os botões no meio verticalmente */
-  width: 100%; /* Ocupa toda a largura do contêiner */
+  position: absolute;
+  /* Define o posicionamento absoluto */
+  top: 50%;
+  /* Coloca os botões no meio verticalmente */
+  width: 100%;
+  /* Ocupa toda a largura do contêiner */
   display: flex;
-  justify-content: space-between; /* Distribui os botões à esquerda e à direita */
-  transform: translateY(-50%); /* Ajusta a posição verticalmente */
+  justify-content: space-between;
+  /* Distribui os botões à esquerda e à direita */
+  transform: translateY(-50%);
+  /* Ajusta a posição verticalmente */
 }
 
 .carousel-buttons button {
   font-size: 1.5em;
-  background-color: rgba(0, 0, 0, 0); /* Cor de fundo com transparência */
-  color: #fff; /* Cor do texto */
+  background-color: rgba(0, 0, 0, 0);
+  /* Cor de fundo com transparência */
+  color: #fff;
+  /* Cor do texto */
   border: none;
-  border-radius: 5px; /* Borda arredondada */
-  padding: 10px 20px; /* Espaçamento interno */
+  border-radius: 5px;
+  /* Borda arredondada */
+  padding: 10px 20px;
+  /* Espaçamento interno */
   cursor: pointer;
-  transition: background-color 0.3s; /* Transição suave de cor de fundo */
-  align-self: center; /* Alinha verticalmente o botão dentro do contêiner */
+  transition: background-color 0.3s;
+  /* Transição suave de cor de fundo */
+  align-self: center;
+  /* Alinha verticalmente o botão dentro do contêiner */
 }
 
 /* Estilo para quando o botão estiver sendo hover (passar o mouse por cima) */
 .carousel-buttons button:hover {
-  background-color: rgba(0, 0, 0, 0); /* Cor de fundo alterada */
+  background-color: rgba(0, 0, 0, 0);
+  /* Cor de fundo alterada */
 }
 
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   width: 30px;
   height: 30px;
@@ -180,7 +196,8 @@ main {
   margin: 0 10px;
 }
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -222,20 +239,24 @@ main {
   margin: auto;
   overflow: hidden;
 }
+
 .main-content {
   padding: 20px;
   background: white;
   margin-top: 20px;
 }
+
 .team {
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
 }
+
 .team-member {
   text-align: center;
   padding: 10px;
 }
+
 .team-member img {
   border-radius: 50%;
   width: 180px;
