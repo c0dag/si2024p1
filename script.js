@@ -27,7 +27,7 @@ function calculateIMC() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Carrossel de imagens
+    // Carrossel de imaens
     showSlides();
     // Efeito de paralaxe
     document.addEventListener('mousemove', function(event) {
