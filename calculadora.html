@@ -2,86 +2,89 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora IMC</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora IMC</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
-    <header class="header">
-        <a href="#" class="logo">
-            <img src="img/logo.png" alt="Logo" height="35" width="85">
-            <nav class="navbar">
-                <a href="index.html">Home</a>
-                <a href="vida_saudavel.html">Vida Saudável</a>
-                <a href="calculadora.html" class="active">Calculadora IMC</a>
-                <a href="contato.html">Contato</a>
-                <a href="about.html">Sobre</a>
-            </nav>
-        </a>
-    </header>
+  <header class="header">
+    <a href="#" class="logo">
+      <img src="img/logo.png" alt="" height="35" width="85">
+    </a>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="vida_saudavel.html">Vida Saudável</a>
+      <a href="calculadora.html" class="active">Calculadora IMC</a>
+      <a href="contato.html">Contato</a>
+      <a href="about.html">Sobre</a>
+    </nav>
+  </header>
+  <div class="spacer"></div>
+  <h3 class="title">Calculadora de IMC</h3>
 
-    <main>
-        <div class="spacer"></div>
-        <h3 class="title">Calculadora IMC</h3>
-        <div class="container">
-            <div class="calculator-form">
-                <form id="imcForm">
-                    <label for="weight">Peso (kg):</label>
-                    <input type="number" id="weight" name="weight" required>
+  <main>
+    <section class="calculator">
+      <div class="text-content">
+        <h3>Calcule seu IMC</h3>
+        <form id="imcForm">
+          <div class="form-group">
+            <label for="weight">Peso (kg):</label>
+            <input type="number" id="weight" required>
+          </div>
+          <div class="form-group">
+            <label for="height">Altura (m):</label>
+            <input type="number" id="height" step="0.01" required>
+          </div>
+          <button type="button" onclick="calculateIMC()">Calcular IMC</button>
+        </form>
+        <h2 id="result"></h2>
+      </div>
+    </section>
+  </main>
 
-                    <label for="height">Altura (cm):</label>
-                    <input type="number" id="height" name="height" required>
-
-                    <input type="submit" value="Calcular IMC">
-                </form>
-                <div id="result"></div>
-            </div>
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <h5 class="footer-title">Informações sobre Obesidade</h5>
+        <ul class="footer-links">
+          <li><a href="about.html">Sobre Nós</a></li>
+          <li><a href="terms.html">Termos de Uso</a></li>
+          <li><a href="privacy.html">Política de Privacidade</a></li>
+          <li><a href="contact.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="footer-title">Serviços</h5>
+        <ul class="footer-links">
+          <li><a href="services.html">Consultoria</a></li>
+          <li><a href="programs.html">Programas de Saúde</a></li>
+          <li><a href="support.html">Suporte</a></li>
+          <li><a href="resources.html">Recursos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="footer-title">Blog</h5>
+        <ul class="footer-links">
+          <li><a href="news.html">Notícias</a></li>
+          <li><a href="articles.html">Artigos</a></li>
+          <li><a href="tips.html">Dicas de Saúde</a></li>
+          <li><a href="stories.html">Histórias de Sucesso</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="footer-title">Siga-nos</h5>
+        <div class="social-icons">
+          <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+          <a href="https://x.com"><i class="fab fa-twitter"></i></a>
+          <a href="https://tiktok.com"><i class="fab fa-tiktok"></i></a>
         </div>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div>
-                <h5 class="footer-title">Informações sobre Obesidade</h5>
-                <ul class="footer-links">
-                    <li><a href="about.html">Sobre Nós</a></li>
-                    <li><a href="terms.html">Termos de Uso</a></li>
-                    <li><a href="privacy.html">Política de Privacidade</a></li>
-                    <li><a href="contact.html">Contato</a></li>
-                </ul>
-            </div>
-            <div>
-                <h5 class="footer-title">Serviços</h5>
-                <ul class="footer-links">
-                    <li><a href="services.html">Consultoria</a></li>
-                    <li><a href="programs.html">Programas de Saúde</a></li>
-                    <li><a href="support.html">Suporte</a></li>
-                    <li><a href="resources.html">Recursos</a></li>
-                </ul>
-            </div>
-            <div>
-                <h5 class="footer-title">Blog</h5>
-                <ul class="footer-links">
-                    <li><a href="news.html">Notícias</a></li>
-                    <li><a href="articles.html">Artigos</a></li>
-                    <li><a href="tips.html">Dicas de Saúde</a></li>
-                    <li><a href="stories.html">Histórias de Sucesso</a></li>
-                </ul>
-            </div>
-            <div>
-                <h5 class="footer-title">Siga-nos</h5>
-                <div class="social-icons">
-                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-                    <a href="https://x.com"><i class="fab fa-twitter"></i></a>
-                    <a href="https://tiktok.com"><i class="fab fa-tiktok"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="script.js"></script>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>

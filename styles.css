@@ -333,50 +333,98 @@ main {
   background-color: rgba(255, 255, 255, 0.05); /* Adiciona um leve fundo branco transparente no hover */
 }
 
-/* Estilos para a Calculadora de IMC */
-.calculator-form {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #ecf0f1;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* styles.css */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-.calculator-form form {
+body {
+  background-color: #f9f9fb;
+  color: #444;
+  line-height: 1.6;
+}
+
+.calculator {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  transition: all 0.3s ease;
+}
+
+.calculator:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.calculator h3 {
+  margin-bottom: 25px;
+  text-align: center;
+  color: #333;
+  font-size: 1.8em;
+}
+
+.calculator form {
   display: flex;
   flex-direction: column;
 }
 
-.calculator-form label {
-  margin-bottom: 10px;
+.calculator form label {
+  margin-bottom: 8px;
   font-weight: bold;
+  color: #666;
 }
 
-.calculator-form input[type="number"],
-.calculator-form input[type="submit"] {
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #bdc3c7;
-  border-radius: 4px;
+.calculator form input {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.calculator-form input[type="submit"] {
-  background-color: #2c3e50;
+.calculator form input:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+}
+
+.calculator form button {
+  padding: 12px;
+  background-color: #4CAF50;
   color: white;
   border: none;
+  border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.calculator-form input[type="submit"]:hover {
-  background-color: #34495e;
+.calculator form button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
 }
 
-#result {
-  margin-top: 20px;
-  font-size: 18px;
+.calculator form button:active {
+  transform: translateY(0);
+}
+
+.calculator #result {
   text-align: center;
+  margin-top: 25px;
+  font-size: 1.5em;
+  color: #333;
 }
 
+#result.success {
+  color: #4CAF50;
+}
 
-
+#result.error {
+  color: #f44336;
+}
