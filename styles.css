@@ -16,9 +16,9 @@ body {
 
 .title {
   padding: 25px;
-  font-size: 3.5em;
+  font-size: 2.5em;
   text-align: center;
-  color: #2a8105;
+  color: #28a745;
 }
 
 .header {
@@ -62,18 +62,10 @@ body {
   height: 70px;
 }
 
-.title-main {
-  font-size: 3.5em;
-  text-align: center;
-  color: #8C0D2F;
-  font-weight: bold;
-  padding: 10px 20px;
-}
-
 main {
   flex: 1;
-  margin-left: 12%;
-  margin-right: 12%;
+  margin-left: 5%; /* Aproxima o texto da borda esquerda */
+  margin-right: 5%;
 }
 
 .info-section {
@@ -85,7 +77,8 @@ main {
 
 .text-content {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 50px; /* Aumenta o espaçamento à esquerda do carrossel */
+  text-align: justify;
 }
 
 .text-content h3 {
@@ -282,7 +275,6 @@ main {
   color: #ecf0f1;
 }
 
-
 /* Grid layout for the footer */
 .footer .container {
   display: grid;
@@ -335,7 +327,7 @@ main {
 
 /* styles.css */
 
-/* Reset básco */
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
