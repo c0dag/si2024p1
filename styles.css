@@ -420,3 +420,59 @@ body {
 #result.error {
   color: #f44336;
 }
+/* Novos estilos para o formulário */
+form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  transition: all 0.3s ease;
+}
+
+form h2 {
+  margin-bottom: 25px;
+  text-align: center;
+  color: #333;
+  font-size: 1.8em;
+}
+
+form label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #666;
+}
+
+form input {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+}
+
+form button {
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+form button:active {
+  transform: translateY(0);
+}
