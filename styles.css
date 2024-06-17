@@ -93,7 +93,8 @@ main {
 .carousel-container {
   flex: 1;
   max-width: 600px;
-  margin: 50px auto 0;
+  margin-bottom: 50px;
+  margin-right: 50px;
   position: relative;
 }
 
@@ -103,6 +104,7 @@ main {
   overflow: hidden;
   border-radius: 10px;
   position: relative;
+
 }
 
 .carousel-inner {
@@ -206,28 +208,26 @@ main {
 .container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* Alinhar ao topo */
+  align-items: flex-start;
   margin: 30px auto;
-  width: 90%; /* Aumentar a largura do container para ocupar mais espaço */
+  width: 90%;
 }
-
 
 .formularioContainer {
   flex: 1;
   margin: 10px;
   min-height: 500px;
   margin-top: -20px;
-  width: 55%; /* Ajuste a largura conforme necessário */
+  width: 55%;
 }
 
 #map-container {
   flex: 1;
-  max-width: 40%; /* Reduzir a largura do mapa */
-  min-height: 500px; /* Altura mínima igual */
-  margin-top: 0; /* Certifique-se de que a margem superior está ajustada conforme necessário */
+  max-width: 40%;
+  min-height: 500px;
+  margin-top: 0;
   margin-right: 140px;
 }
-
 
 #map {
   width: 100%;
@@ -235,6 +235,7 @@ main {
   position: relative;
   right: 115px;
 }
+
 .main-content {
   padding: 20px;
   background: white;
@@ -360,13 +361,14 @@ body {
 
 .calculator {
   background-color: #ffffff;
-  padding: 30px;
+  padding: 10px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 400px;
-  margin: 50px auto;
+  max-width: 300px;
   transition: all 0.3s ease;
+  margin-bottom: 80px;
+  margin-left: 40px;
 }
 
 .calculator:hover {
@@ -374,10 +376,10 @@ body {
 }
 
 .calculator h3 {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   text-align: center;
   color: #333;
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 
 .calculator form {
@@ -386,14 +388,14 @@ body {
 }
 
 .calculator form label {
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   font-weight: bold;
   color: #666;
 }
 
 .calculator form input {
-  padding: 12px;
-  margin-bottom: 15px;
+  padding: 8px;
+  margin-bottom: 10px;
   border: 1px solid #ddd;
   border-radius: 8px;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
@@ -405,7 +407,7 @@ body {
 }
 
 .calculator form button {
-  padding: 12px;
+  padding: 10px;
   background-color: #4CAF50;
   color: white;
   border: none;
@@ -425,8 +427,8 @@ body {
 
 .calculator #result {
   text-align: center;
-  margin-top: 25px;
-  font-size: 1.5em;
+  margin-top: 15px;
+  font-size: 1.3em;
   color: #333;
 }
 
@@ -496,16 +498,43 @@ form button:active {
 
 textarea#mensagem {
   width: 100%;
-  height: 100px; /* Ajuste a altura conforme necessário */
+  height: 100px;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
 }  
 
-form textarea { resize:none; }
+form textarea {
+  resize: none;
+}
 
-.map-title{
+.map-title {
   position: relative;
   margin-left: 115px;
   right: 10px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.calculator, .tabelaIMC {
+  flex: 1;
+  max-width: 40%;
+}
+
+.tabelaIMC img {
+  max-width: 100%;
+  height: auto;
+  width: 300px;
+  margin-bottom: 85px;
+  margin-left: 180px;
+}
+
+.espaçamento{
+  margin-left: 25px;
 }

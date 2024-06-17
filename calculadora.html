@@ -25,20 +25,21 @@
   <div class="spacer"></div>
   <h3 class="title">calculadora de IMC</h3>
 
-  <main>
-    <section class="calculator">
-      <div>
-        <h3>Calcule seu IMC</h3>
-        <form id="imcForm">
-            <label for="weight">Peso (kg):</label>
-            <input type="number" id="weight" required>
-            <label for="height">Altura (m):</label>
-            <input type="number" id="height" step="0.01" required>
-          <button type="button" onclick="calculateIMC()">Calcular IMC</button>
-        </form>
-        <h2 id="result"></h2>
-      </div>
-    </section>
+  <main class="main-container">
+    <div class="calculator">
+      <h3>Calcule seu IMC</h3>
+      <form id="imcForm">
+        <label for="weight">Peso (kg):</label>
+        <input type="number" id="weight" required>
+        <label for="height">Altura (m):</label>
+        <input type="number" id="height" step="0.01" required>
+        <button type="button" onclick="calculateIMC()">Calcular IMC</button>
+      </form>
+      <h2 id="result"></h2>
+    </div>
+    <div class="tabelaIMC">
+      <img src="img/imctabela.png" alt="Tabela IMC">
+    </div>
   </main>
 
   <footer class="footer">
