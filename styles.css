@@ -169,32 +169,6 @@ main {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.imagem-paralax {
-  width: 100%;
-  height: 150px;
-}
-
-.parallax-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  max-height: 200px;
-}
-
-.parallax-image-container {
-  overflow: hidden;
-  position: relative;
-  height: 300px;
-  max-width: 600px;
-}
-
-.parallax-image {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  transition: transform 0.1s ease-out;
-}
 
 .text-section {
   margin-bottom: 50px;
