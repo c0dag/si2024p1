@@ -29,7 +29,6 @@ function enviarForm(e){
   }, 3000);
 
   document.getElementById('formularioContato').reset();
-  console.log(nome, email, telefone, mensagem);
 }
 
 function enviarDB(nome, email, telefone, mensagem){

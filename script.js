@@ -85,3 +85,22 @@ function showSlide(n) {
 function currentSlide(n) {
     showSlide(slideIndex = n);
 }
+
+document.getElementById('formularioContato').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita o comportamento padrão do formulário
+    
+    
+    // Mostra a mensagem de sucesso
+    var successMessage = document.getElementById('successMessage');
+    successMessage.style.display = 'block';
+    
+    // Esconde a mensagem de sucesso após 3 segundos
+    setTimeout(function() {
+      successMessage.style.display = 'none';
+    }, 3000);
+    
+    // Reseta o formulário
+    this.reset();
+  });
+  
+  
