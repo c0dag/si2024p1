@@ -19,8 +19,9 @@ function enviarForm(e){
   var nome = getElementVal('nome');
   var email = getElementVal('email');
   var telefone = getElementVal('telefone');
+  var mensagem = getElementVal('mensagem')
 
-  enviarDB(nome, email, telefone);
+  enviarDB(nome, email, telefone, mensagem);
   document.querySelector(".alert").style.display = "block";
 
   setTimeout(() => {
@@ -28,15 +29,16 @@ function enviarForm(e){
   }, 3000);
 
   document.getElementById('formularioContato').reset();
-  console.log(nome, email, telefone);
+  console.log(nome, email, telefone, mensagem);
 }
 
-function enviarDB(nome, email, telefone){
+function enviarDB(nome, email, telefone, mensagem){
   var novoFormularioContato = contactFormDB.push();
   novoFormularioContato.set({
     nome: nome,
     email: email,
-    telefone: telefone
+    telefone: telefone,
+    mensagem: mensagem
   });
 }
 

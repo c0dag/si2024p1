@@ -206,29 +206,34 @@ main {
 .container {
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: flex-start; /* Alinhar ao topo */
   margin: 30px auto;
-  width: 80%;
-
+  width: 90%; /* Aumentar a largura do container para ocupar mais espaço */
 }
+
 
 .formularioContainer {
   flex: 1;
   margin: 10px;
-  min-height: 500px; /* Altura mínima igual */
-  margin-top: -20px; /* Ajuste este valor conforme necessário */
+  min-height: 500px;
+  margin-top: -20px;
+  width: 55%; /* Ajuste a largura conforme necessário */
 }
 
 #map-container {
   flex: 1;
-  max-width: 55%;
+  max-width: 40%; /* Reduzir a largura do mapa */
   min-height: 500px; /* Altura mínima igual */
   margin-top: 0; /* Certifique-se de que a margem superior está ajustada conforme necessário */
+  margin-right: 140px;
 }
+
 
 #map {
   width: 100%;
   height: 500px;
+  position: relative;
+  right: 115px;
 }
 .main-content {
   padding: 20px;
@@ -487,4 +492,20 @@ form button:hover {
 
 form button:active {
   transform: translateY(0);
+}
+
+textarea#mensagem {
+  width: 100%;
+  height: 100px; /* Ajuste a altura conforme necessário */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}  
+
+form textarea { resize:none; }
+
+.map-title{
+  position: relative;
+  margin-left: 115px;
+  right: 10px;
 }
