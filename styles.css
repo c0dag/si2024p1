@@ -206,23 +206,24 @@ main {
 .container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
   margin: 30px auto;
   width: 80%;
+
 }
 
-.form-container {
+.formularioContainer {
   flex: 1;
-  max-width: 40%;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  height: 500px; /* Altura ajustada para igualar ao mapa */
+  margin: 10px;
+  min-height: 500px; /* Altura mínima igual */
+  margin-top: -20px; /* Ajuste este valor conforme necessário */
 }
 
 #map-container {
   flex: 1;
   max-width: 55%;
+  min-height: 500px; /* Altura mínima igual */
+  margin-top: 0; /* Certifique-se de que a margem superior está ajustada conforme necessário */
 }
 
 #map {
