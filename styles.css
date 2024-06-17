@@ -536,6 +536,109 @@ form textarea {
   margin-left: 180px;
 }
 
+.site-container {
+  width: 100%;
+
+}
+
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  text-align: justify;
+  font-size: 1.1em
+}
+
+
+
+.titulo-receita h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2a8105
+}
+.titulo-receita p{
+  font-size: 1.1em
+}
+
+
+
+.beneficios h3{
+  color: #2a8105;
+  font-size: 1.5em;
+}
+
+
+.beneficios {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 1.1em
+}
+
+.beneficios p {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.conteudo-receita {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 1.1em
+}
+
+.ingredientes {
+  flex: 1;
+  text-align: left; /* Alinha os ingredientes à esquerda */
+  margin-right: 20px; /* Espaço entre os ingredientes e a imagem */
+  font-size: 1.1em
+}
+
+.ingredientes h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #2a8105;
+  
+}
+
+.ingredientes-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.ingredientes-list li {
+  margin-bottom: 5px;
+}
+
+.ingredientes-list i {
+  color: #bdc3c7;
+  font-size: 1.1rem;
+}
+
+.imagem-section {
+  flex: 1;
+  text-align: center; /* Alinha a imagem ao centro */
+}
+
+.imagem-section img {
+  max-width: 75%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.preparo {
+  text-align: justify;
+  font-size: 1.1em
+}
+
+.preparo h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #2a8105;
+}
+
 .espaçamento{
   margin-left: 25px;
 }
